@@ -13,5 +13,15 @@ and open the template in the editor.
         <?php
         // put your code here
         ?>
+        <form name="formularioDatos" method="post" action="ejemploPost1.php">
+
+  			Usuario: <input type="text" name="user" value="">
+  			<br/> <br/>
+  			Contraseña: <input type="password" name="pass" value="">
+  			<br/> <br/>
+  			<input value="Iniciar seccion" type="submit" />
+
+</form>
+
     </body>
 </html>
