@@ -26,7 +26,6 @@ and open the template in the editor.
   			<input value="Iniciar seccion" type="submit" />
 
 </form>
-</form>
 
     </body>
 </html>
