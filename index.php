@@ -49,7 +49,7 @@ if (!$link) {
         $pass="hola";
 
        $sql ="INSERT INTO persona VALUES('$user',' $pass')";
-     $ejecutar=mysqli_query($sql);
+     $ejecutar= mysqli_query($link, $sql);
 if (!$ejecutar) {
     echo"hubo error";
 } else {
