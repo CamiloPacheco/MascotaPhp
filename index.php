@@ -27,7 +27,7 @@ and open the template in the editor.
         
  $servidor="mascotaserver.database.windows.net";
  $usuario="administrador";
- $clave="contraseña";
+ $clave="Contraseña01";
  $base="MascotaDataBase";
 
 $link = mysqli_connect($servidor, $usuario, $clave, $base);
