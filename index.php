@@ -29,18 +29,33 @@ and open the template in the editor.
  $usuario="root";
  $clave="contraseña";
  $base="mascotadatabase";
-/* @var $link type */
-$link = mysqli_connect($servidor, $usuario, $clave, $base);
-mysqli_select_db($link, $base);
 
+$link = mysqli_connect($servidor, $usuario, $clave, $base);
+
+if (!$link) {
+    echo "No se pudo conectar con el servidor ";
+}else
+   {
+    mysqli_select_db($link, $base);
+    
+    if (!$base) {
+        echo "No se encontro base de datos";
+    }
+    
+   }
    
         
-        $user=filter_input(INPUT_POST, 'Usuario');
-        $pass=filter_input(INPUT_POST, 'Contraseña');
+        $user="hola";
+        $pass="hola";
 
-        echo "funciona ";
-mysqli_query("INSERT INTO persona(Usuario,Contraseña)values('$user','$pass')");
-        ?>
+       $sql ="INSERT INTO persona VALUES('$user',' $pass')";
+     $ejecutar=mysqli_query($sql);
+if (!$ejecutar) {
+    echo"hubo error";
+} else {
+    echo" Datos guardados ";
+}
+?>
 </form>
 
     </body>
