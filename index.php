@@ -38,7 +38,7 @@ mysqli_select_db($link, $base);
         $user=filter_input(INPUT_POST, 'Usuario');
         $pass=filter_input(INPUT_POST, 'Contraseña');
 
-
+        echo "funciona ";
 mysqli_query("INSERT INTO persona(Usuario,Contraseña)values('$user','$pass')");
         ?>
 </form>
