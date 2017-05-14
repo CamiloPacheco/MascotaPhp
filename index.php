@@ -17,11 +17,11 @@ and open the template in the editor.
 <body style="background:#80BFFF">
   <form name="formularioDatos" method="POST" >
 
-  Usuario: <input type="text" name="usuario" value="">
+  <input type="text" name="usuario" value="">
   <br/> <br/>
-  Contraseña: <input type="password" name="contraseña" value="">
+  <input type="password" name="contraseña" value="">
   <br/> <br/>
-  <input value="Iniciar seccion" type="submit" />
+  <input value="Iniciar seccion" type="submit" name="sirve" />
  <?php
         
         
@@ -29,7 +29,7 @@ and open the template in the editor.
  $usuario="sql10174313";
  $clave="UMVSBAV3iI";
  $base="sql10174313";
-
+if (isset($_POST['sirve']) && !empty($_POST['usuario'])) {
 $link = mysqli_connect($servidor, $usuario, $clave, $base);
 
 if (!$link) {
@@ -45,8 +45,8 @@ if (!$link) {
    }
    
         
-        $user="hola";
-        $pass="hola";
+        $user=$_POST['usuario'];
+        $pass=$_POST['contraseña'];
 
        $sql ="INSERT INTO persona VALUES('$user',' $pass')";
      $ejecutar= mysqli_query($link, $sql);
@@ -54,6 +54,7 @@ if (!$ejecutar) {
     echo"hubo error";
 } else {
     echo" Datos guardados ";
+}
 }
 ?>
 </form>
