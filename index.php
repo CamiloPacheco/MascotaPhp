@@ -11,7 +11,7 @@ and open the template in the editor.
     </head>
     <body>
       
-<H1 align="center"> Encuentra Mascota </H1>.
+<H1 align="center"> Encuentra tu Mascota </H1>.
 <H2 align = " left "> Iniciar sesión</H2>
 
 <body style="background:#80BFFF">
