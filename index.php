@@ -25,10 +25,10 @@ and open the template in the editor.
  <?php
         
         
- $servidor="mascotaserver.database.windows.net";
- $usuario="administrador";
- $clave="Contraseña01";
- $base="MascotaDataBase";
+ $servidor="sql10.freesqldatabase.com";
+ $usuario="sql10174313";
+ $clave="UMVSBAV3iI";
+ $base="sql10174313";
 
 $link = mysqli_connect($servidor, $usuario, $clave, $base);
 
