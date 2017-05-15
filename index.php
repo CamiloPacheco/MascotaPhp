@@ -17,9 +17,9 @@ and open the template in the editor.
 <body style="background:#80BFFF">
   <form name="formularioDatos" method="POST" >
 
-  <input type="text" name="usuario" value="">
+  <input type="text" name="usuario" >
   <br/> <br/>
-  <input type="password" name="contraseña" value="">
+  <input type="password" name="contraseña" >
   <br/> <br/>
   <input value="Iniciar seccion" type="submit" name="sirve" />
  <?php
