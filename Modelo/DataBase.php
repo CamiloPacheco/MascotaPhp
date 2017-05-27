@@ -17,5 +17,9 @@ class DataBase {
  private   $clave="i2ptCdajuD";
  private   $base="sql10176873";
     public function Conectar($user, $pass) {
-    
+      
+        //$busqueda = mysqli_query($link, "SELECT * FROM persona WHERE usuario = camilo");
+        //echo "- Nombre: " . $busqueda['usuario'] . " <br/> ";
+    }
+
 }
