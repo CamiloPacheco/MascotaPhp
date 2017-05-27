@@ -17,30 +17,5 @@ class DataBase {
  private   $clave="i2ptCdajuD";
  private   $base="sql10176873";
     public function Conectar($user, $pass) {
-        $link = mysqli_connect($this->servidor, $this->usuario, $this->clave, $this->base);
-        if (isset($_POST['sirve']) && !empty($_POST['usuario'])) {
-
-            if (!$link) {
-                echo "No se pudo conectar con el servidor ";
-            } else {
-                mysqli_select_db($link, $base);
-
-                if (!$base) {
-                    echo "No se encontro base de datos";
-                }
-            }
-
-
-            $sql = "INSERT INTO Cuenta VALUES('$user',' $pass')";
-            $ejecutar = mysqli_query($link, $sql);
-            if (!$ejecutar) {
-                echo"hubo error";
-            } else {
-                echo" Datos guardados ";
-            }
-        }
-        //$busqueda = mysqli_query($link, "SELECT * FROM persona WHERE usuario = camilo");
-        //echo "- Nombre: " . $busqueda['usuario'] . " <br/> ";
-    }
-
+    
 }
